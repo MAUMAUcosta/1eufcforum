@@ -1,5 +1,4 @@
 var STORAGE_KEY = 'ufc_forum_posts_v1';
-
 var state = { threads: [] };
 
 function agoraISO() {
@@ -159,8 +158,6 @@ function iniciar() {
             return false;
         };
     }
-    // guestbook removed - no handlers
     desenharThreads();
 }
-
 window.onload = function() { carregarEstado(); iniciar(); };
