@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>UFC Fórum</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Caminhos absolutos baseados no repositório (funciona no GitHub Pages) -->
+    <link rel="stylesheet" href="/1eufcforum/CSS/style.css">
 </head>
 
 <body>
@@ -40,9 +41,10 @@
                     </table>
 
                     <form id="newThreadForm">
-                        <input id="threadTitle" placeholder="Título do tópico" required>
-                        <input id="threadAuthor" placeholder="Seu nick" required>
-                        <textarea id="threadContent" placeholder="Escreva sua mensagem" required></textarea>
+                        <!-- adicionei atributos name para evitar problemas caso o JS não carregue -->
+                        <input id="threadTitle" name="threadTitle" placeholder="Título do tópico" required>
+                        <input id="threadAuthor" name="threadAuthor" placeholder="Seu nick" required>
+                        <textarea id="threadContent" name="threadContent" placeholder="Escreva sua mensagem" required></textarea>
                         <button type="submit">Criar tópico</button>
                     </form>
                 </section>
@@ -74,6 +76,6 @@
         </footer>
     </div>
 
-    <script src="JS/forum.js"></script>
+    <script src="/1eufcforum/JS/forum.js"></script>
 </body>
 </html>
